@@ -1,0 +1,180 @@
+@import
+url("https://fonts.googleapis.com/css?family=Raleway:100, 300, 400, 700, 900");
+@import
+url("https://fonts.googleapis.com/css?family=Amatic+SC");
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+/* header
+   ======================= */
+
+.title{
+  color: white;
+  font-family: 'Amatic SC', 'Raleway', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0.2em;
+}
+
+header{
+  position: absolute;
+  width: 100%;
+  margin-top: 1em;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin: 1em;
+}
+
+nav a{
+  font-family: 'Amatic SC', 'Raleway', sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin-left: 0.5em;
+  padding: 0.5em;
+  color: white;
+/*  background: #63AACA;*/
+}
+
+#contact-button{
+  margin-left: 0;
+}
+
+nav a:hover,
+nav a:focus{
+  color: #E5E5E5;
+  border-bottom-style: solid;
+  border-bottom-color: #8CE379;
+  border-bottom-width: 2px;
+  padding-bottom: 3px;
+}
+
+/* home-hero
+   ======================= */
+.home-hero{
+  background-image: url("../img/pineapple-supply-co-150879-unsplash.jpg");
+  padding-top: 10em;
+  color: white;
+}
+
+.small-white-text{
+  color: white;
+  font-size: .6rem;
+  padding: 7em 2em 0 2em;
+  text-align:  right;
+  margin-bottom: 0;
+}
+
+.tagline{
+  font-size: 2rem;
+  padding: 1.5em 0 2em 0;
+  font-weight: 900;
+  margin: 0 0.25em 0 0.5em;
+}
+
+#not-bold{
+  font-weight: 100;
+  font-size: 1.25rem;
+}
+
+.button-accent{
+  font-family: 'Amatic SC', 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #8CE379;
+  padding: 0.5em 1em 0.5em 1em;
+  border-style: solid;
+  border-width: medium;
+  border-color: #8CE379;
+}
+
+.button-accent:hover,
+.button-accent:focus{
+  color: white;
+  border-color: white;
+  background-color: rgba(140, 227, 121, .75);
+}
+
+/* home-about
+   ======================= */
+
+.home-about{
+  background-image: url("../img/three_sisters_cover_page.JPG");
+  color: white;
+  margin-top: 0.25em;
+  padding-left: 20.5%;
+  padding-right: 20%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.heading{
+  font-family: 'Amatic SC', 'Raleway', sans-serif;
+  font-size: 2.2em;
+  margin-top: 0;
+}
+
+/* portfolio
+   ======================= */
+.portfolio{
+  margin-top: 0.25em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  background-image: url("../img/wood-jars.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.port-item{
+  margin-bottom: 0;
+  padding-bottom: 1em;
+}
+
+/* footer
+   ======================= */
+
+footer{
+  padding: 1em 0;
+  color: white;
+  margin-top: 0.25em;
+  background-image: url("../img/large-plant-on-stool.jpg");
+}
+
+footer h2{
+  margin-top: 0;
+  font-family: 'Amatic SC', 'Raleway', sans-serif;
+  font-size: 1.8rem;
+}
+
+footer a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+footer a:hover,
+footer a:focus{
+  color: #E5E5E5;
+  border-bottom-style: solid;
+  border-bottom-color: #8CE379;
+  border-bottom-width: 2px;
+  padding-bottom: 3px;
+}
