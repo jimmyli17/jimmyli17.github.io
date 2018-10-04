@@ -70,13 +70,22 @@ nav a:focus{
 .home-hero{
   background-image: url("../img/pineapple-supply-co-150879-unsplash.jpg");
   padding-top: 10em;
+  padding-bottom: 1em;
   color: white;
 }
 
 .small-white-text{
   color: white;
   font-size: .6rem;
-  padding: 7em 2em 0 2em;
+  padding: 6em 2em 0 2em;
+  text-align:  right;
+  margin-bottom: 0;
+}
+
+.small-white-text-2{
+  color: white;
+  font-size: .6rem;
+  padding: 1em 2em 0 2em;
   text-align:  right;
   margin-bottom: 0;
 }
