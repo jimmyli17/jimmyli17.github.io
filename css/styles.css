@@ -1,7 +1,7 @@
 @import
 url("https://fonts.googleapis.com/css?family=Raleway:100, 300, 400, 700, 900");
 @import
-url("https://fonts.googleapis.com/css?family=Amatic+SC");
+url("https://fonts.googleapis.com/css?family=Amatic+SC:Regular, Bold");
 
 * {
   box-sizing: border-box;
@@ -13,20 +13,161 @@ body{
   text-align: center;
 }
 
-/* header
-   ======================= */
-
-.title{
-  color: white;
-  font-family: 'Amatic SC', 'Raleway', sans-serif;
-  font-size: 3rem;
-  margin-bottom: 0.2em;
+img{
+  max-width: 100%;
+  height: auto;
 }
+
+.container{
+  width: 92%;
+  margin: 0 auto;
+}
+
+/*typography
+========================== */
+.title{
+  font-family: 'Amatic SC', 'Raleway', sans-serif;
+  font-size: 4.5em;
+}
+
+nav a {
+  font-family: 'Amatic SC', 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+.tagline{
+  font-size: 3.5em;
+}
+
+#not-bold{
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.button-accent{
+  font-family: 'Amatic SC', 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  font-weight: Bold;
+}
+
+@media (min-width: 300px){
+  .title{
+    font-size: 3.3rem;
+  }
+  nav a{
+    font-size: 1.2rem;
+  }
+  .tagline{
+    font-size: 1.55rem;
+  }
+  #not-bold{
+    font-size: 0.9rem;
+  }
+  .button-accent{
+    font-size: 1.1rem;
+  }
+  .small-white-text{
+    font-size: .4rem;
+  }
+}
+
+@media (min-width: 450px){
+  .title{
+    font-size: 3.3rem;
+  }
+  nav a{
+    font-size: 1.2rem;
+  }
+  .tagline{
+    font-size: 1.75rem;
+  }
+  #not-bold{
+    font-size: 1.0rem;
+  }
+  .button-accent{
+    font-size: 1.2rem;
+  }
+  .small-white-text{
+    font-size: .45rem;
+  }
+}
+
+@media (min-width: 600px){
+  .title{
+    font-size: 3.6rem;
+  }
+  nav a{
+    font-size: 1.55rem;
+  }
+  .tagline{
+    font-size: 2.0rem;
+  }
+  #not-bold{
+    font-size: 1.2rem;
+  }
+  .button-accent{
+    font-size: 1.4rem;
+  }
+  .small-white-text{
+    font-size: .5rem;
+  }
+}
+
+@media (min-width: 750px){
+  .title{
+    font-size: 4rem;
+  }
+  nav a{
+    font-size: 1.75rem;
+  }
+  .tagline{
+    font-size: 2.2rem;
+  }
+  #not-bold{
+    font-size: 1.35rem;
+  }
+  .button-accent{
+    font-size: 1.55rem;
+  }
+  .small-white-text{
+    font-size: .55rem;
+  }
+}
+
+@media (min-width: 900px){
+  .title{
+    font-size: 4.5rem;
+  }
+  nav a{
+    font-size: 2rem;
+  }
+  .tagline{
+    font-size: 2.75rem;
+  }
+  #not-bold{
+    font-size: 1.65rem;
+  }
+  .button-accent{
+    font-size: 1.75rem;
+  }
+  .small-white-text{
+    font-size: .6rem;
+  }
+}
+/* header
+========================== */
 
 header{
   position: absolute;
-  width: 100%;
+  left: 0;
+  right: 0;
   margin-top: 1em;
+}
+
+.title{
+  color: #FFF;
+  margin-bottom: 0.05em;
 }
 
 nav ul{
@@ -41,11 +182,8 @@ nav li{
 }
 
 nav a{
-  font-family: 'Amatic SC', 'Raleway', sans-serif;
-  font-weight: 900;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.4rem;
   margin-left: 0.5em;
   padding: 0.5em;
   color: white;
@@ -65,12 +203,25 @@ nav a:focus{
   padding-bottom: 3px;
 }
 
+@media (min-width: 900px){
+  header {
+    margin: 2rem 2rem 2rem 3rem;
+  }
+  .title {
+    float: left;
+    margin: 0;
+  }
+  ul{
+    float: right;
+  }
+}
+
 /* home-hero
    ======================= */
 .home-hero{
   background-image: url("../img/pineapple-supply-co-150879-unsplash.jpg");
-  padding-top: 10em;
-  padding-bottom: 1em;
+  padding-top: 12em;
+  padding-bottom: 1.5em;
   color: white;
 }
 
@@ -91,28 +242,23 @@ nav a:focus{
 }
 
 .tagline{
-  font-size: 2rem;
   padding: 1.5em 0 2em 0;
-  font-weight: 900;
-  margin: 0 0.25em 0 0.5em;
+  margin: 2em 0.25em 1.5em 0.5em;
 }
 
 #not-bold{
-  font-weight: 100;
-  font-size: 1.25rem;
+  display: block;
+  padding-top: 0.5em;
 }
 
 .button-accent{
-  font-family: 'Amatic SC', 'Raleway', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 900;
   text-decoration: none;
   text-transform: uppercase;
-  color: #8CE379;
+  color: #89E076;
   padding: 0.5em 1em 0.5em 1em;
   border-style: solid;
-  border-width: medium;
-  border-color: #8CE379;
+  border-width: 3px;
+  border-color: #89E076;
 }
 
 .button-accent:hover,
@@ -120,6 +266,40 @@ nav a:focus{
   color: white;
   border-color: white;
   background-color: rgba(140, 227, 121, .75);
+}
+
+@media (min-width: 300px){
+  .button-accent{
+    border-width: 2.8px;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+  }
+}
+
+@media (min-width: 450px){
+  .button-accent{
+    border-width: 2.6px;
+  }
+}
+
+@media (min-width: 600px){
+  .button-accent{
+    border-width: 2.4px;
+  }
+}
+
+@media (min-width: 750px){
+  .button-accent{
+    border-width: 2.2px;
+  }
+}
+
+@media (min-width: 900px){
+  .tagline{
+    margin: 0 0 1em 0;
+  }
+  .button-accent{
+    border-width: 2px;
+  }
 }
 
 /* home-about
