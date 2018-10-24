@@ -185,6 +185,34 @@ nav a {
     font-size: .6rem;
   }
 }
+
+@media (max-height: 400px){
+  .title{
+    font-size: 4rem;
+  }
+  nav a{
+    font-size: 1.75rem;
+  }
+  .tagline{
+    font-size: 2.35rem;
+  }
+  #not-bold{
+    font-size: 1.4rem;
+  }
+  .button-accent{
+    font-size: 1.55rem;
+  }
+  .button-small{
+    font-size: 1.15rem;
+  }
+  .small-white-text{
+    font-size: .55rem;
+  }
+  .small-white-text-2{
+    font-size: .55rem;
+  }
+}
+
 /* banner
 ========================== */
 .cookie-banner {
@@ -335,10 +363,24 @@ nav a:focus{
 }
 
 .button-accent:hover,
-.button-accent:focus{
+.button-accent:active{
   color: white;
   border-color: white;
   background-color: rgba(140, 227, 121, .75);
+}
+
+@media(max-height: 550px){
+  .tagline{
+    padding: 0.5em 0 1em 0;
+    margin: 1.0em 0.25em 0.5em 0.5em;
+  }
+}
+
+@media(max-height: 400px){
+  .tagline{
+    padding: 0.5em 0 1em 0;
+    margin: 0.5em 0.25em 0em 0.5em;
+  }
 }
 
 @media (min-width: 300px){
@@ -379,6 +421,17 @@ nav a:focus{
   }
 }
 
+@media (max-height: 550px) and (min-width: 600px) {
+  .title {
+    float: left;
+    margin: 0;
+    padding-left: 0.4em;
+  }
+  ul{
+    float: right;
+  }
+}
+
 /* home-about
    ======================= */
 .home-about{
@@ -408,6 +461,7 @@ nav a:focus{
   padding-bottom: 1em;
   background-image: url("../img/wood-jars.jpg");
   background-size: cover;
+  background-position: center;
   color: white;
 }
 
