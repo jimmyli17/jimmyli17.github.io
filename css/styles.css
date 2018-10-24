@@ -499,9 +499,6 @@ nav a:focus{
     .portfolio-img{
       width: 300px;
     }
-    .portfolio-img-2{
-      width: 300px;
-    }
 
     .centered{
       text-align:center;
@@ -523,7 +520,28 @@ nav a:focus{
       transform: translate(0, 50%);
     }
 
+    .overlay-text-4 {
+      opacity: 1;
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 900;
+      display: inline-block;
+      text-align: center;
+      transform: translate(0, 100%);
+    }
+
     .overlay-text {
+      font-family: 'Amatic SC', 'Raleway', sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #89E076;
+      padding: 0.5em 1.2em 0.5em 1.2em;
+      border-style: solid;
+      border-width: 3px;
+      border-color: #89E076;
+    }
+
+    .overlay-text-3 {
       font-family: 'Amatic SC', 'Raleway', sans-serif;
       text-decoration: none;
       text-transform: uppercase;
@@ -540,13 +558,17 @@ nav a:focus{
       border-color: white;
       background-color: rgba(140, 227, 121, .75);
     }
+
+    .overlay-text-3:hover,
+    .overlay-text-3:focus{
+      color: white;
+      border-color: white;
+      background-color: rgba(140, 227, 121, .75);
+    }
   }
 
   @media (min-width: 600px){
     .portfolio-img{
-      width: 500px;
-    }
-    .portfolio-img-2{
       width: 500px;
     }
     .overlay {
